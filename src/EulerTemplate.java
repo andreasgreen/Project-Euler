@@ -15,7 +15,7 @@ public class EulerTemplate {
 
 
     }
-                  e
+
     public static void startTimer() {
         startTime = System.currentTimeMillis();
     }
