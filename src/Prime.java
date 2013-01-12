@@ -5,8 +5,8 @@
  * Time: 11:50 PM
  * To change this template use File | Settings | File Templates.
  */
-public class IsPrime {
-    private static boolean isPrime(long n) {
+public class Prime {
+    public static boolean isPrime(long n) {
         if (n < 2) return false;
         if (n == 2 || n == 3) return true;
         if (n%2 == 0 || n%3 == 0) return false;
