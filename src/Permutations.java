@@ -80,4 +80,34 @@ public class Permutations {
 
     }
 
+    public static boolean isPalindromic(long l) {
+        String s = Long.toString(l);
+        return isPalindromic(s);
+    }
+
+    public static boolean isPalindromic(String s) {
+        boolean even = s.length()%2==0;
+        if(even) {
+            while(s.length() > 0) {
+                if(s.charAt(0) == s.charAt(s.length()-1))  {
+                    s = s.substring(1,s.length()-1);
+                } else {
+                    return false;
+                }
+
+            }
+            return true;
+        } else {
+            while(s.length() > 1) {
+                if(s.charAt(0) == s.charAt(s.length()-1))  {
+                    s = s.substring(1,s.length()-1);
+                } else {
+                    return false;
+                }
+
+            }
+        }
+        return true;
+    }
+
 }
